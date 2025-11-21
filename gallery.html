@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon/favicon.png">
+
+    <!-- Meta Tags Base -->
+    <meta name="title" content="Portfolio | Simone Sbrizzi">
+    <meta name="description"
+        content="Full-stack web developer and photographer. I create modern websites and capture expressive photos from street, portrait, and landscape scenes.">
+
+    <!-- SEO: Keywords -->
+    <meta name="keywords"
+        content="Simone Sbrizzi, portfolio, web developer, photographer, street photography, front-end, back-end, full-stack">
+
+    <!-- Author -->
+    <meta name="author" content="Simone Sbrizzi">
+
+    <!-- Social Preview (Open Graph) -->
+    <meta property="og:title" content="Portfolio | Simone Sbrizzi">
+    <meta property="og:description"
+        content="Full-stack web developer and photographer. Check out my gallery and projects.">
+    <meta property="og:image" content="assets/favicon/favicon.png">
+    <meta property="og:url" content="https://TUONOME.github.io/portfolio">
+    <meta property="og:type" content="website">
+
+    <!-- Mobile -->
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery | Simone Sbrizzi</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR (copy from index) -->
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/myLogo.png">
+            </a>
+        </div>
+
+        <div class="nav-links">
+            <a href="projects.html">My Projects</a>
+            <a href="gallery.html">My Gallery</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contacts</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <div class="gallery-header">
+        <p><i class="ri-camera-fill"></i> My Photography</p>
+        <h2>Street, Portraits and everythings i love to shoot.</h2>
+
+        <div class="gallery-categories">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="street">Street</button>
+            <button data-filter="portraits">Portraits</button>
+            <button data-filter="landscapes">Landscapes</button>
+        </div>
+    </div>
+
+    <!-- GALLERY GRID -->
+    <div class="gallery-grid">
+
+        <!-- STREET -->
+        <div class="photo street">
+            <img src="assets/photos/street-1.jpg">
+        </div>
+        <div class="photo street">
+            <img src="assets/photos/street-2.jpg">
+        </div>
+
+        <!-- PORTRAITS -->
+        <div class="photo portraits">
+            <img src="assets/photos/portrait-1.jpg">
+        </div>
+        <div class="photo portraits">
+            <img src="assets/photos/portrait-2.jpg">
+        </div>
+
+        <!-- LANDSCAPES -->
+        <div class="photo landscapes">
+            <img src="assets/photos/landscape-1.jpg">
+        </div>
+        <div class="photo landscapes">
+            <img src="assets/photos/landscape-2.jpg">
+        </div>
+
+    </div>
+
+    <div class="photo-modal" id="photoModal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+
+    <!-- FOOTER (copy from index) -->
+    <footer>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <p>© 2025 Simone Sbrizzi.</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+
+</body>
+
+</html>
